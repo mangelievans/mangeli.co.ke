@@ -211,18 +211,23 @@
         .engineering-card {
             width: 300px;
             height: 300px;
-
             border: 1px solid #334155;
             border-radius: 50%;
+            overflow: hidden;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            background:
-                radial-gradient(circle, #102a43, #0b1120 65%);
-
+            background: radial-gradient(circle, #102a43, #0b1120 65%);
             box-shadow: 0 0 60px rgba(56, 189, 248, 0.15);
+        }
+
+        .engineering-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .engineering-card .symbol {
